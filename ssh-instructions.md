@@ -5,7 +5,7 @@
 **"Client"** refers to the computer you are connecting from. (Desktop PC)
 
 ## On the Client Machine
-If you have not generated a private and public key, known as a *key pair* previously then follow these instructions. Otherwise skip to the "On the Sever Machine" section.
+If you have not generated a private and public key, known as a *key pair* previously then follow these instructions. Otherwise skip to the **On the Sever Machine** section.
 
 1. Open the Terminal application or Windows PowerShell
 2. Create a SSH keypair by running the code contained in the block below (note: the program will prompt you several times - use the defaults by typing the "enter" key):
@@ -49,22 +49,21 @@ ssh-keygen -t ed25519
     ```
     hostname -I
     ```
-12. To enable SSH
-    - Select the raspberry icon menu
+12. To enable SSH on Raspberry Pi
+    - Select the Raspberry Menu Icon
     - Select **Preferences** > **Raspberry Pi Configuration**
     - Click the **Interfaces** tab
     - Click the **Enabled** radio button for **SSH**
         
 ## Back on Client Machine
-1. In the `.ssh` directory, create a file called `known_hosts` note that it has no file extension
-2. Edit the `know_hosts` file using a text editor and paste the public key of the server into this file
+1. In the `.ssh` directory, create a file called `known_hosts` note that it has no file extension. Edit the `know_hosts` file using a text editor and paste the public key of the server into this file
     ```
     vim ~/.ssh/known_hosts
     ```
-3. In terminal or Windows PowerShell enter the command
+2. In terminal or Windows PowerShell enter the command
     ```
     ssh [user]@[sever IP]
     ```
-4. The connection will prompt for the password created in Step 3
+3. The connection will prompt for the password created in Step 3
 
-Once the connection is established, you can manage the virtual server remotely from your computer :)
+Once the connection is established, you can manage the virtual server remotely from your computer. :)
