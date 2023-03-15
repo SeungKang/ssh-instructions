@@ -62,6 +62,6 @@ If you have not generated a private and public key, known as a *key pair* previo
     ```
     ssh [user]@[sever IP]
     ```
-3. The connection will prompt for the password created in Step 3
+3. The connection will prompt for the ssh keypair password created earlier
 
-Once the connection is established, you can manage the virtual server remotely from your computer. :)
+Once the connection is established, you can manage the server remotely from your computer. :)
