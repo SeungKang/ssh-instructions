@@ -1,8 +1,8 @@
 # Connecting to Computer with SSH Public Key Authentication
 
-**"Server"** refers to the computer you are trying to connect to. (Raspberry Pi)
+**"Server"** refers to the computer you are trying to connect to. (Ex. Raspberry Pi)
 
-**"Client"** refers to the computer you are connecting from. (Desktop PC)
+**"Client"** refers to the computer you are connecting from. (Ex. Desktop PC)
 
 ## On the Client Machine
 If you have not generated a private and public key, known as a *key pair* previously on this computer then follow these instructions. Otherwise skip to the **On the Sever Machine** section.
