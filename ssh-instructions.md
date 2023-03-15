@@ -53,7 +53,8 @@ If you have not generated a private and public key, known as a *key pair* previo
     - Click the **Enabled** radio button for **SSH**
         
 ## Back on Client Machine
-1. In the `.ssh` directory, create a file called `known_hosts` note that it has no file extension. Edit the `know_hosts` file using a text editor and paste the public key of the server into this file. Save the file and close.
+
+1. In the `.ssh` directory, create a file called `known_hosts`. Note that it has no file extension. Edit the `known_hosts` file using a text editor and paste the public key of the server into this file. Save the file and close
     ```
     vim ~/.ssh/known_hosts
     ```
