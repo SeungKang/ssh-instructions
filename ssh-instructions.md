@@ -5,18 +5,19 @@
 **"Client"** refers to the computer you are connecting from. (Ex. Desktop PC)
 
 ## On the Client Machine
+
 If you have not generated a private and public key, known as a *key pair* previously on this computer then follow these instructions. Otherwise skip to the **On the Sever Machine** section.
 
 1. Open the Terminal application or Windows PowerShell
 2. Create a SSH keypair by running the code contained in the block below (note: the program will prompt you several times - use the defaults by typing the "enter" key):
-
-```
-ssh-keygen -t ed25519
-```
+    ```
+    ssh-keygen -t ed25519
+    ```
 3. Enter the passphrase to encrypt the private key. Re-enter the same passphrase and press **Enter** to finish generating the key pair. 
 4. Copy the public key file that was created in the `.ssh` directory in your user account (the file should be named: `id_ed25519.pub`). This key will be added to the sever machine in the following steps.
 
 ## On the Server Machine
+
 1. Install OS on Raspberry Pi
 2. Boot it up and connect to internet
 3. Open the Terminal application
@@ -32,7 +33,7 @@ ssh-keygen -t ed25519
     ```
     vim ~/.ssh/authorized_keys
     ```
-7. Change the permissions on authorized_keys so that the user can only read and write
+7. Change the permissions on `authorized_keys` so that the user can only read and write
     ```
     chmod 600 ~/.ssh/authorized_keys
     ```
