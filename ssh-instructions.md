@@ -41,12 +41,12 @@ If you have not generated a private and public key, known as a *key pair* previo
     ```
     cat /etc/ssh/ssh_host_ed25519_key.pub
     ```
-10. Find a way to send this public key to your client computer, for example with a USB Flash Drive, email, messaging app
-11. Determine the Server IP address. You can use the command 
+9. Find a way to send this public key to your client computer, for example with a USB Flash Drive, email, messaging app
+10. Determine the Server IP address. You can use the command
     ```
     hostname -I
     ```
-12. To enable SSH on Raspberry Pi
+11. To enable SSH on Raspberry Pi
     - Select the Raspberry Menu Icon
     - Select **Preferences** > **Raspberry Pi Configuration**
     - Click the **Interfaces** tab
