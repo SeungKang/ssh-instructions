@@ -21,15 +21,15 @@ If you have not generated a private and public key, known as a *key pair* previo
 1. Install OS on Raspberry Pi
 2. Boot it up and connect to internet
 3. Open the Terminal application
-4. Create a `.ssh` directory in the user directory 
+4. Create a `.ssh` directory in the user's home directory
     ```
-    mkdir ~/.ssh
+    mkdir -m 700 ~/.ssh
     ```
 5. Within the `.ssh` directory create a file named `authorized_keys`
     ```
     touch ~/.ssh/authorized_keys
     ```
-6. Open the `authorized_keys` file using a text editor such as Text Editor, Notepad or VIM. Paste the client public key into the `authorized_keys` file as a new line. Save the file and close.
+6. Open the `authorized_keys` file using a text editor such as Text Editor, Notepad or VIM. Paste the client public key into the `authorized_keys` file as a new line. Save the file and close
     ```
     vim ~/.ssh/authorized_keys
     ```
@@ -37,11 +37,7 @@ If you have not generated a private and public key, known as a *key pair* previo
     ```
     chmod 600 ~/.ssh/authorized_keys
     ```
-8. Change the permissions for the `.ssh` directory
-    ```
-    chmod 600 ~/.ssh
-    ```
-9. Copy the server public key in the directory `/etc/ssh/ssh_host_ed25519_key.pub`. Can use the command `cat` to print key to the terminal as shown below.
+8. Copy the server public key in the directory `/etc/ssh/ssh_host_ed25519_key.pub`. Can use the command `cat` to print key to the terminal as shown below
     ```
     cat /etc/ssh/ssh_host_ed25519_key.pub
     ```
